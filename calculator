@@ -21,3 +21,16 @@ class Program
         }
     }
 }
+factorial
+    Console.Write("Enter a non-negative integer to calculate its factorial: ");
+        
+        // Read user input
+        if (int.TryParse(Console.ReadLine(), out int number) && number >= 0)
+        {
+            long factorial = 1; // Initialize factorial result
+
+            // Calculate factorial using a simple loop
+            for (int i = 1; i <= number; i++)
+            {
+                factorial *= i; // Multiply current number to the result
+            }
